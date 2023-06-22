@@ -12,12 +12,10 @@ import java.util.Collections;
 @Configuration
 @ComponentScan("resttemplate")
 public class Config {
-
     @Bean
     public RestTemplate restTemplate(){
         return new RestTemplate();
     }
-
     @Bean
     public HttpHeaders httpHeaders() {
         HttpHeaders headers = new HttpHeaders();

@@ -8,6 +8,7 @@ import resttemplate.component.Communication;
 @SpringBootApplication
 public class RestTemplateApp {
     public static void main(String[] args) {
+
         ConfigurableApplicationContext context = SpringApplication.run(RestTemplateApp.class, args);
 
         Communication communication = context.getBean("communication", Communication.class);
